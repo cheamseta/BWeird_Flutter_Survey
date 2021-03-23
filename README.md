@@ -1,6 +1,7 @@
 # BWeird - Survey Flutter Application
 
-Hi this is an simple survey application. originally, The purpose of this application was trying to use in Karot Super Market [https://web.facebook.com/karotmarkets][PlDb] to get feedbacks from customers.  
+
+Hi this is a simple survey application. originally, the purpose of this application was trying to implement in " Karot Super Market " [https://web.facebook.com/karotmarkets][PlDb] to get feedbacks from customers.  Now, it's available in Github for everyone to look around or use it as a template for QuickStart survey app. Thank you
 
 ## Features
 
