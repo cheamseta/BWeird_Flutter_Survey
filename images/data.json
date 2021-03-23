@@ -1,0 +1,28 @@
+[
+  {
+    "type": "rating",
+    "questionKh": "អនាម័យនៅក្នុងបរិវេណផ្សារទាំងមូល ?",
+    "questionEn": "Overall, how cleaniness is the market?"
+  },
+  {
+    "type": "rating",
+    "questionKh": "ភាពរសរាយរាក់ទាក់ នឹងជួយយកឧស្សាហ័ ដល់ភ្ញៀវ ?",
+    "questionEn": "Friendliness & helpful from our staffs?"
+  },
+  {
+    "type": "rating",
+    "questionKh": "បន្លែផ្លែឈើ សាច់ គ្រឿងទេស ស្រស់ល្អ សុវត្តិភាព នឹង គុណភាព ?",
+    "questionEn": "Variety, Freshness, Safe & Good Quality Products ?"
+  },
+  {
+    "type": "radio",
+    "questionKh": "តើអ្នកមកទិញនៅផ្សារ ការ៉ុតមួយសប្ភាហ័ ប៉ុន្មានដង ?",
+    "questionEn": "How often do you typically shop at Karot Market per week ?",
+    "answers": [
+      "រាល់ថ្ងៃ (Daily)",
+      "១ ដង ក្នុងមួយសប្ភាហ័ (1/week)",
+      "២ ទៅ ៣ ដង (2 to 3 times per week)",
+      "១ខែ ឬយូៗម្តង (rarly or once / month)"
+    ]
+  }
+]
