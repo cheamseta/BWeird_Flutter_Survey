@@ -68,6 +68,21 @@ class Helper {
     ]);
   }
 
+    static alert(BuildContext context, String title, String msg) {
+    showDialog(
+        context: context,
+        builder: (BuildContext context) => AlertDialog(
+              title: Text(title),
+              content: Text(msg),
+              actions: [
+                TextButton(
+                  child: Text("OK"),
+                  onPressed: () => Navigator.pop(context),
+                ),
+              ],
+            ));
+  }
+
   static Widget button(String title, Color color, VoidCallback callback) {
     return InkWell(
         onTap: () => callback(),

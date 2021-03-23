@@ -45,9 +45,12 @@ class _ThankWidget extends State<ThankWidget> {
               style: Helper.headerKhmer, textAlign: TextAlign.left),
           Helper.questionLabelInKhmerEng(
               'តើអ្នកចង់បន្ត ផ្តល់មតិបន្ថែម?', 'Do you want to add more?'),
-          SizedBox(height: 40),
-          Helper.button("DONE", Helper.COLOR_DARK, () => print("hello")),
-          Helper.button("CONTINUE", Helper.COLOR_PRIMARY, () {})
+           Image.asset(
+            "images/hi5.gif",
+            width: 150.0,
+            height: 150.0,
+          ),
+          Helper.button("DONE", Helper.COLOR_DARK, () => widget.callback())
         ],
       ),
     );

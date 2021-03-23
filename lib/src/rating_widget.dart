@@ -4,8 +4,8 @@ import 'package:survey_app/src/helper.dart';
 
 // ignore: must_be_immutable
 class RatingWidget extends StatefulWidget {
-  String overallStatus;
-  double overall;
+  double rate;
+  String rateStatus;
 
   String khmerQestion;
   String engQestion;
@@ -18,8 +18,8 @@ class RatingWidget extends StatefulWidget {
       {Key? key,
       required this.khmerQestion,
       required this.engQestion,
-      required this.overallStatus,
-      required this.overall,
+      required this.rate,
+      required this.rateStatus,
       required this.callback
       });
 
@@ -31,12 +31,12 @@ class RatingWidget extends StatefulWidget {
 
 class _RatingStateWidget extends State<RatingWidget> {
  
-    bool visible = false;
+  bool visible = false;
+  
 
   @override
   void initState() {
     super.initState();
-    getOverallStatus(widget.overall);
     Future.delayed(Duration(milliseconds: 100), () => setState(() => visible = true));
   }
 
@@ -56,7 +56,7 @@ class _RatingStateWidget extends State<RatingWidget> {
                     widget.khmerQestion, widget.engQestion),
                 SizedBox(height: 50),
                 Text(
-                  widget.overallStatus,
+                  widget.rateStatus,
                   style: TextStyle(
                       color: Helper.COLOR_PRIMARY,
                       fontWeight: FontWeight.bold,
@@ -66,7 +66,7 @@ class _RatingStateWidget extends State<RatingWidget> {
                 SizedBox(height: 40),
                 Center(
                     child: RatingBar.builder(
-                  initialRating: widget.overall,
+                  initialRating: widget.rate,
                   minRating: 1,
                   direction: Axis.horizontal,
                   allowHalfRating: false,
@@ -79,8 +79,8 @@ class _RatingStateWidget extends State<RatingWidget> {
                   onRatingUpdate: (rating) {
                     widget.callback(rating);
                     setState(() {
-                      widget.overall = rating.round().toDouble();
-                      getOverallStatus(widget.overall);
+                      widget.rate = rating.round().toDouble();
+                      getOverallStatus(widget.rate);
                     });
                   },
                 ))
@@ -93,19 +93,19 @@ class _RatingStateWidget extends State<RatingWidget> {
   getOverallStatus(double overall) {
     switch (overall.toInt()) {
       case 1:
-        widget.overallStatus = 'Bad';
+        widget.rateStatus = 'Bad';
         break;
       case 2:
-        widget.overallStatus = 'Normal';
+        widget.rateStatus = 'Normal';
         break;
       case 3:
-        widget.overallStatus = 'Good';
+        widget.rateStatus = 'Good';
         break;
       case 4:
-        widget.overallStatus = 'Very Good';
+        widget.rateStatus = 'Very Good';
         break;
       default:
-        widget.overallStatus = 'Excellent';
+        widget.rateStatus = 'Excellent';
         break;
     }
   }

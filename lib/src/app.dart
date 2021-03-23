@@ -31,8 +31,8 @@ class SplashScreen extends StatefulWidget {
 }
 
 class SplashScreenState extends State<SplashScreen> {
-  double overall = 3.0;
-  String overallStatus = "Good";
+  double rate = 0.0;
+  String rateStatus = "";
 
   int curIndex = -1;
   List questionairs = [];
@@ -70,8 +70,10 @@ class SplashScreenState extends State<SplashScreen> {
 
   thankWidget() {
     return ThankWidget(callback: () {
-      setState(() => curIndex = -1);
-      print("hello");
+      setState(() {
+       result = {};
+        curIndex = -1;
+      });
     });
   }
 
@@ -156,8 +158,8 @@ class SplashScreenState extends State<SplashScreen> {
       return RatingWidget(
           khmerQestion: questionair.questionKh,
           engQestion: questionair.questionEn,
-          overallStatus: this.overallStatus,
-          overall: this.overall,
+          rate: rate,
+          rateStatus: rateStatus,
           callback: (value) {
             result[curIndex + 1] = value;
           });
@@ -171,7 +173,11 @@ class SplashScreenState extends State<SplashScreen> {
   }
 
   nextQuestion() {
-    setState(() => curIndex += 1);
+ if (result[curIndex + 1] == null) {
+      Helper.alert(context, "Error", "Please rate befor moving on");
+    } else {
+      setState(() => curIndex += 1);
+    }
   }
 
   previousQuestion() {
