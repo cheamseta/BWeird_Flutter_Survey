@@ -1,42 +1,42 @@
 import 'package:flutter/material.dart';
-import 'package:survey_app/src/helper.dart';
+import 'package:survey_app/widgets/helper.dart';
 
-class StarterWidget extends StatefulWidget {
+class StarterViewWidget extends StatefulWidget {
   final Function(String) onSelected;
 
-
-  StarterWidget({Key? key, required this.onSelected});
+  StarterViewWidget({Key? key, required this.onSelected});
 
   @override
   State<StatefulWidget> createState() {
-    return _StarterWidget();
+    return _StarterViewWidget();
   }
 }
 
-class _StarterWidget extends State<StarterWidget> {
+class _StarterViewWidget extends State<StarterViewWidget> {
   @override
   Widget build(BuildContext context) {
     return Stack(children: [
-      Positioned(
-          top: 50,
-          left: 10,
-          child: Image.asset("images/title.jpg",
-              width: 200,
-              color: Color.fromRGBO(255, 255, 255, 0.3),
-              colorBlendMode: BlendMode.modulate)),
-      Positioned(
-          bottom: 0,
-          left: 0,
-          child: Image.asset("images/bush.jpg", width: 150)),
-      Positioned(
-          bottom: 0,
-          right: 0,
-          child: Image.asset("images/bush_rev.jpg", width: 150)),
-      body(),
-    ]);
+        Positioned(
+            top: 50,
+            left: 10,
+            child: Image.asset("assets/images/title.jpg",
+                width: 200,
+                color: Color.fromRGBO(255, 255, 255, 0.3),
+                colorBlendMode: BlendMode.modulate)),
+        Positioned(
+            bottom: 0,
+            left: 0,
+            child: Image.asset("assets/images/bush.jpg", width: 150)),
+        Positioned(
+            bottom: 0,
+            right: 0,
+            child: Image.asset("assets/images/bush_rev.jpg", width: 150)),
+        bodyWidget(),
+      ],
+    );
   }
 
-  Widget body() {
+  Widget bodyWidget() {
     return Container(
       margin: EdgeInsets.all(50.0),
       child: Column(
@@ -97,15 +97,16 @@ class _StarterWidget extends State<StarterWidget> {
     return Expanded(
       child: Center(
         child: Container(
-          padding: EdgeInsets.only(left:20,right:20),
+          padding: EdgeInsets.only(left: 20, right: 20),
           height: 150.0,
           child: Row(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: <Widget>[
-              reactionWidget('images/angry.gif', 'មិនរីករាយ', 'Unhappy'),
-              reactionWidget('images/mmm.gif', 'ធម្មតា','Neutral'),
-              reactionWidget('images/hearteyes.gif', 'រីករាយ', 'Satisfied')
+              reactionWidget('assets/images/angry.gif', 'មិនរីករាយ', 'Unhappy'),
+              reactionWidget('assets/images/mmm.gif', 'ធម្មតា', 'Neutral'),
+              reactionWidget(
+                  'assets/images/hearteyes.gif', 'រីករាយ', 'Satisfied')
             ],
           ),
         ),

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
-import 'package:survey_app/src/helper.dart';
+import 'helper.dart';
 
 // ignore: must_be_immutable
 class RatingWidget extends StatefulWidget {

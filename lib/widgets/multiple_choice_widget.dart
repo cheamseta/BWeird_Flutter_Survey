@@ -1,7 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:survey_app/src/helper.dart';
-import 'package:survey_app/src/question_model.dart';
+import 'package:survey_app/models/question_model.dart';
+
+import 'helper.dart';
 
 class MultipleChoiceWidget extends StatefulWidget {
 
