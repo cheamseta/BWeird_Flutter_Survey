@@ -11,10 +11,10 @@ Hi this is a simple survey application. originally, the purpose of this applicat
 - Alpha animation
 
 ## Screenshot
-![alt text](https://karot.ams3.digitaloceanspaces.com/screenshot/Screenshot_20210323-233937.png)
-![alt text](https://karot.ams3.digitaloceanspaces.com/screenshot/Screenshot_20210323-234004.png)
-![alt text](https://karot.ams3.digitaloceanspaces.com/screenshot/Screenshot_20210323-233950.png)
-![alt text](https://karot.ams3.digitaloceanspaces.com/screenshot/Screenshot_20210323-234015.png)
+![alt text](https://firebasestorage.googleapis.com/v0/b/hubgit-cea1c.appspot.com/o/photo_2021-04-09%2000.31.36.jpeg?alt=media&token=0ada9245-a435-4c8e-89f8-864242dbb060)
+![alt text](https://firebasestorage.googleapis.com/v0/b/hubgit-cea1c.appspot.com/o/photo_2021-04-09%2000.31.34.jpeg?alt=media&token=c551c730-12d5-4f91-92cb-8915bfe23c91)
+![alt text](https://firebasestorage.googleapis.com/v0/b/hubgit-cea1c.appspot.com/o/photo_2021-04-09%2000.31.32.jpeg?alt=media&token=6d519304-bacd-44bd-aa54-50bfb1330db8)
+![alt text](https://firebasestorage.googleapis.com/v0/b/hubgit-cea1c.appspot.com/o/photo_2021-04-09%2000.31.29.jpeg?alt=media&token=45c74c5e-4ff3-4290-9c74-7d3002110b40)
 
 ## Thank to
 
